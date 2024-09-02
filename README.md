@@ -4,15 +4,15 @@
 
 ### Create an archive
 
-    ./ascii-archive.py create some.file > my-archive.txt
+    ./ascii_archive.py create some.file > my-archive.txt
 
 ### Lists contents of an archive
 
-    ./ascii-archive.py list < my-archive.txt
+    ./ascii_archive.py list < my-archive.txt
 
 ### Extract file of an archive
 
-    ./ascii-archive.py extract < my-archive.txt
+    ./ascii_archive.py extract < my-archive.txt
 
 ## File format
 

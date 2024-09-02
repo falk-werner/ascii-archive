@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""File archiver using ASCII files."""
 
 import argparse
 import os
@@ -46,7 +47,7 @@ class ArchiveReader:
             line = self.__readline()
         if self.version != 1:
             raise Exception("version not supported")
-        
+
     def next(self):
         self.entry_type = None
         self.filename = None
@@ -64,7 +65,7 @@ class ArchiveReader:
         else:
             self.__read_unknown(self.entry_type)
         return True
-        
+
     def __read_file(self):
         filename = ""
         data = ""
@@ -88,7 +89,6 @@ class ArchiveReader:
     def __read_unknown(self, name):
         line = self.__readline()
         while line != f"----- End {name} -----":
-            data += line
             line = self.__readline()
 
 
