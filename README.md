@@ -70,3 +70,25 @@ VALUE := [^\r\n]*
 EOL := '\n' | '\r\n' | '\r'
 SPACE := ' ' | '\t'
 ```
+
+### Example
+
+The following example shows an archive containg two files:
+- foo: with the contents "42"
+- bar: with the contents "23"
+
+```
+----- Begin ASCII-Archive -----
+Version: 1
+----- End ASCII-Archive -----
+----- Begin File -----
+Filename: foo
+
+NDI=
+----- End File -----
+----- Begin File -----
+Filename: bar
+
+MjM=
+----- End File -----
+```
