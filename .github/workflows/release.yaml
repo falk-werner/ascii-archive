@@ -29,8 +29,9 @@ jobs:
           python -m build
 
       - name: Deploy
+        run: |
+          python -m twine upload dist/*
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: {{ secrets.PyPiToken }}
-        run: |
-          python -m twine upload dist/*
+
