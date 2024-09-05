@@ -1,3 +1,4 @@
+[![build](https://github.com/falk-werner/ascii-archive/actions/workflows/build.yaml/badge.svg)](https://github.com/falk-werner/ascii-archive/actions/workflows/build.yaml)
 [![GitHub License](https://img.shields.io/github/license/falk-werner/ascii-archive)](https://github.com/falk-werner/ascii-archive/blob/main/LICENSE)
 [![PyPI - Version](https://img.shields.io/pypi/v/ascii-archive)](https://pypi.org/project/ascii-archive/)
 [!![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/falk-werner/ascii-archive)](https://github.com/falk-werner/ascii-archive/issues)
